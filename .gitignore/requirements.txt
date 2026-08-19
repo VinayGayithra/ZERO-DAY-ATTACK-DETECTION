@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+scapy
+scikit-learn
+pandas
+numpy
+scipy
+openpyxl
+python-multipart
+joblib
+websockets

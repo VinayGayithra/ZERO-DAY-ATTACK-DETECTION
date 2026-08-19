@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  safeml-soc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: safeml_security_soc
+    ports:
+      - "8001:8001"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8001
+    network_mode: "host" # Allows raw packet capture on host interface
+    restart: unless-stopped
